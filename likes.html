@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
-    <title>Pages - Admin Dashboard UI Kit - Blank Page</title>
+    <title>Likes - Talent Scout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
     <link rel="apple-touch-icon" href="pages/ico/60.png">
     <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
@@ -45,23 +45,23 @@
         <!-- BEGIN SIDEBAR MENU ITEMS-->
         <ul class="menu-items">
           <li class="m-t-30 ">
-            <a href="UI_Artists.html"><span class="title">Artists</span></a>
+            <a href="artists.html"><span class="title">Artists</span></a>
             <span class="icon-thumbnail"><i data-feather="music"></i></span>
           </li>
           <li class="">
-            <a href="#"><span class="title">Friends</span></a>
+            <a href="friends.html"><span class="title">Friends</span></a>
             <span class="icon-thumbnail"><i data-feather="users"></i></span>
           </li>
           <li class="">
-            <a href="UI_Streams.html"><span class="title">Streams</span></a>
+            <a href="streams.html"><span class="title">Streams</span></a>
             <span class="icon-thumbnail"><i data-feather="play"></i></span>
           </li>
           <li class="">
-            <a href="#"><span class="title">Likes</span></a>
+            <a href="likes.html"><span class="title">Likes</span></a>
             <span class="icon-thumbnail"><i class="fa fa-heart-o"></i></span>
           </li>
           <li class="">
-            <a href="UI_Shouts.html"><span class="title">Shouts</span></a>
+            <a href="shouts.html"><span class="title">Shouts</span></a>
             <span class="icon-thumbnail"><i class="fa fa-share-square-o"></i></span>
           </li>
         </ul>
@@ -248,14 +248,14 @@
                   <div class="inner">
                     <!-- START BREADCRUMB -->
                     <ol class="breadcrumb sm-p-b-5">
-                      <li class="breadcrumb-item active"><h4>Shouts</h4></li>
+                      <li class="breadcrumb-item active"><h4>Likes</h4></li>
                     </ol>
                   </div>
                 </div>
               </div>
               <!-- END JUMBOTRON -->
               <div class=" container-fluid   container-fixed-lg sm-p-l-0 sm-p-r-0">
-                <div class="feed" id="shouts">
+                <div class="feed">
                   <!-- START DAY -->
                   <div class="day" data-social="day">
                     <div class="card social-card share  col3" data-social="item">
@@ -264,32 +264,22 @@
                       <div class="card-header clearfix">
                         <div class="row">
                           <div class="col-md-6">
-                            <a href="javascript:void(0)"><span>Ruben Owen</span></a>,
-                            <a href="javascript:void(0)"><span>Katrina Kelly</span></a> and 
-                            <a href="javascript:void(0)"><span>Krista Stokes</span></a>
+                            <div class="user-pic">
+                              <img alt="Profile Image" width="33" height="33" data-src-retina="assets/img/artists/1.jpg" data-src="assets/img/artists/1.jpg" src="assets/img/artists/1.jpg">
+                            </div>
+                            <h5>Calvin Harris</h5>
+                            <h6>Sweet Nothing ft. Florence Welch <span class="location semi-bold"><i class="fa fa-music"></i></span> | Sep 20, 2012
+                            </h6>
                           </div>
                           <div class="col-md-6">
-                            <div class="pull-right small hint-text">
-                              <span>Jan 30, 2020</span>
+                            <div class="pull-right small">
+                              <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
+                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5,345 <i class="fa fa-comment-o"></i></a>
+                              <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
+                              <a href="javascript:void(0)" class="btn btn-success btn-xs">23k <i class="fa fa-heart text-danger"></i></a>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="card-description">
-                        <p>Let go to the party on Saturday night.</p>
-                      </div>
-                      <div class="card-content" style="text-align: center;">
-                        <img alt="Quote" src="assets/img/shouts/1.jpg">
-                      </div>
-                      <div class="card-footer clearfix">
-                        <ul class="reactions">
-                          <li><a href="#">5,345 <i class="fa fa-comment-o"></i></a>
-                          </li>
-                          <li><a href="#">20K <i class="fa fa-share-square-o"></i></a>
-                          </li>
-                          <li><a href="#">23K <i class="fa fa-heart-o"></i></a>
-                          </li>
-                        </ul>
                       </div>
                     </div>
                     <div class="card social-card share  col3" data-social="item">
@@ -298,32 +288,22 @@
                       <div class="card-header clearfix">
                         <div class="row">
                           <div class="col-md-6">
-                            <a href="javascript:void(0)"><span>Ruben Owen</span></a>,
-                            <a href="javascript:void(0)"><span>Katrina Kelly</span></a> and 
-                            <a href="javascript:void(0)"><span>Krista Stokes</span></a>
+                            <div class="user-pic">
+                              <img alt="Profile Image" width="33" height="33" data-src-retina="assets/img/artists/1.jpg" data-src="assets/img/artists/1.jpg" src="assets/img/artists/1.jpg">
+                            </div>
+                            <h5>Calvin Harris</h5>
+                            <h6>Calvin Harris - We'll Be Coming Back ft. Example <span class="location semi-bold"><i class="fa fa-music"></i></span> | Jul 6, 2012
+                            </h6>
                           </div>
                           <div class="col-md-6">
-                            <div class="pull-right small hint-text">
-                              <span>Jan 30, 2020</span>
+                            <div class="pull-right small">
+                              <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
+                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5,345 <i class="fa fa-comment-o"></i></a>
+                              <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
+                              <a href="javascript:void(0)" class="btn btn-success btn-xs">23k <i class="fa fa-heart text-danger"></i></a>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="card-description">
-                        <p>Let go to the party on Saturday night.</p>
-                      </div>
-                      <div class="card-content" style="text-align: center;">
-                        <img alt="Quote" src="assets/img/shouts/2.jpg">
-                      </div>
-                      <div class="card-footer clearfix">
-                        <ul class="reactions">
-                          <li><a href="#">5,345 <i class="fa fa-comment-o"></i></a>
-                          </li>
-                          <li><a href="#">20K <i class="fa fa-share-square-o"></i></a>
-                          </li>
-                          <li><a href="#">23K <i class="fa fa-heart-o"></i></a>
-                          </li>
-                        </ul>
                       </div>
                     </div>
                     <div class="card social-card share  col3" data-social="item">
@@ -332,32 +312,119 @@
                       <div class="card-header clearfix">
                         <div class="row">
                           <div class="col-md-6">
-                            <a href="javascript:void(0)"><span>Ruben Owen</span></a>,
-                            <a href="javascript:void(0)"><span>Katrina Kelly</span></a> and 
-                            <a href="javascript:void(0)"><span>Krista Stokes</span></a>
+                            <div class="user-pic">
+                              <img alt="Profile Image" width="33" height="33" data-src-retina="assets/img/artists/2.jpg" data-src="assets/img/artists/2.jpg" src="assets/img/artists/2.jpg">
+                            </div>
+                            <h5>Katy Perry</h5>
+                            <h6>Katy Perry - Dark Horse (Official) ft. Juicy J <span class="location semi-bold"><i class="fa fa-music"></i></span> | Feb 20, 2014
+                            </h6>
                           </div>
                           <div class="col-md-6">
-                            <div class="pull-right small hint-text">
-                              <span>Jan 30, 2020</span>
+                            <div class="pull-right small">
+                              <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
+                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5,345 <i class="fa fa-comment-o"></i></a>
+                              <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
+                              <a href="javascript:void(0)" class="btn btn-success btn-xs">23k <i class="fa fa-heart text-danger"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="card-description">
-                        <p>Let go to the party on Saturday night.</p>
+                    </div>
+                    <div class="card social-card share  col3" data-social="item">
+                      <div class="circle" data-toggle="tooltip" title="Label" data-container="body">
                       </div>
-                      <div class="card-content" style="text-align: center;">
-                        <img alt="Quote" src="assets/img/shouts/3.png">
+                      <div class="card-header clearfix">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="user-pic">
+                              <img alt="Profile Image" width="33" height="33" data-src-retina="assets/img/artists/3.jpg" data-src="assets/img/artists/3.jpg" src="assets/img/artists/3.jpg">
+                            </div>
+                            <h5>Taylor Swift</h5>
+                            <h6>Playlist 2019 <span class="location semi-bold"><i class="fa fa-music"></i></span>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="pull-right small">
+                              <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
+                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5,345 <i class="fa fa-comment-o"></i></a>
+                              <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
+                              <a href="javascript:void(0)" class="btn btn-success btn-xs">23k <i class="fa fa-heart text-danger"></i></a>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div class="card-footer clearfix">
-                        <ul class="reactions">
-                          <li><a href="#">5,345 <i class="fa fa-comment-o"></i></a>
-                          </li>
-                          <li><a href="#">20K <i class="fa fa-share-square-o"></i></a>
-                          </li>
-                          <li><a href="#">23K <i class="fa fa-heart-o"></i></a>
-                          </li>
-                        </ul>
+                      <div class="card-content">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="card card-default">
+                              <div class="card-block">
+                                <div class="scrollable">
+                                  <div class="demo-card-scrollable">
+                                    <div class="table-responsive">
+                                      <table class="table table-hover" id="playlist">
+                                        <tbody>
+                                          <tr>
+                                            <td class="v-align-middle semi-bold" style="width: 70%;">We Are Never Ever Getting Back Together</td>
+                                            <td class="v-align-middle" style="width: 30%;">
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5,345 <i class="fa fa-comment-o"></i></a>
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">23k <i class="fa fa-heart-o"></i></a>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="v-align-middle semi-bold">You Belong With Me</td>
+                                            <td class="v-align-middle">
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5,345 <i class="fa fa-comment-o"></i></a>
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">23k <i class="fa fa-heart-o"></i></a>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="v-align-middle semi-bold">Shake It Off</td>
+                                            <td class="v-align-middle">
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5,345 <i class="fa fa-comment-o"></i></a>
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">23k <i class="fa fa-heart-o"></i></a>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="v-align-middle semi-bold">I Knew You Were Trouble</td>
+                                            <td class="v-align-middle">
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5,345 <i class="fa fa-comment-o"></i></a>
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">23k <i class="fa fa-heart-o"></i></a>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="v-align-middle semi-bold">Everything Has Changed</td>
+                                            <td class="v-align-middle">
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5,345 <i class="fa fa-comment-o"></i></a>
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">23k <i class="fa fa-heart-o"></i></a>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="v-align-middle semi-bold">All You Had To Do Was Stay</td>
+                                            <td class="v-align-middle">
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5,345 <i class="fa fa-comment-o"></i></a>
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
+                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">23k <i class="fa fa-heart-o"></i></a>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
 
@@ -370,6 +437,57 @@
             </div>
             <!-- /container -->
           </div>
+          <!-- Modal -->
+          <div class="modal fade slide-up disable-scroll" id="shoutModal" role="dialog" aria-hidden="false" style="overflow:hidden;">
+            <div class="modal-dialog ">
+              <div class="modal-content-wrapper">
+                <div class="modal-content">
+                  <div class="modal-header clearfix text-left">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
+                    </button>
+                    <h5>Shout</h5>
+                    <!-- <p class="p-b-10">We need payment information inorder to process your order</p> -->
+                  </div>
+                  <div class="modal-body">
+                    <form role="form">
+                      <div class="form-group-attached">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group form-group-default">
+                              <label>Friends</label>
+                              <select class="full-width" data-init-plugin="select2" multiple="">
+                                <option>Clarence T. Rodriguez</option>
+                                <option>Kevin A. Bos</option>
+                                <option>Sheldon G. Armstrong</option>
+                                <option>Emily M. Gilliam</option>
+                                <option>Lois L. Spink</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group form-group-default">
+                              <label>Content</label>
+                              <textarea class="form-control" style="height: 100px;"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-8"></div>
+                        <div class="col-md-4 m-t-10 sm-m-t-10">
+                          <a href="shouts.html" class="btn btn-primary btn-block m-t-5">Submit</a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!-- /.modal-content -->
+            </div>
+          </div>
+          <!-- End Modal -->
         </div>
         <!-- END PAGE CONTENT -->
         <!-- START COPYRIGHT -->
@@ -379,13 +497,13 @@
           <div class="copyright sm-text-center">
             <p class="small no-margin pull-left sm-pull-reset">
               <span class="hint-text">Copyright &copy; 2017 </span>
-              <span class="font-montserrat">REVOX</span>.
+              <span class="font-montserrat">Talent Scout</span>.
               <span class="hint-text">All rights reserved. </span>
               <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> <span class="muted">|</span> <a href="#" class="m-l-10">Privacy Policy</a></span>
             </p>
-            <p class="small no-margin pull-right sm-pull-reset">
+            <!-- <p class="small no-margin pull-right sm-pull-reset">
               Hand-crafted <span class="hint-text">&amp; made with Love</span>
-            </p>
+            </p> -->
             <div class="clearfix"></div>
           </div>
         </div>
