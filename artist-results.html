@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
-    <title>Likes - Talent Scout</title>
+    <title>Friends - Talent Scout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
     <link rel="apple-touch-icon" href="pages/ico/60.png">
     <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
@@ -22,9 +22,6 @@
     <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="assets/plugins/switchery/css/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="assets/plugins/codrops-stepsform/css/component.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="assets/plugins/jquery-datatable/media/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/jquery-datatable/extensions/FixedColumns/css/dataTables.fixedColumns.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/datatables-responsive/css/datatables.responsive.css" rel="stylesheet" type="text/css" media="screen" />
     <link rel="stylesheet" href="https://cdn.plyr.io/3.5.8/plyr.css" />
     <link href="pages/css/pages-icons.css" rel="stylesheet" type="text/css">
     <link class="main-stylesheet" href="pages/css/themes/light.css" rel="stylesheet" type="text/css" />
@@ -106,7 +103,7 @@
                           <a href="#" class="text-primary pull-left">
                             <i class="pg-map fs-16 m-r-10"></i>
                             <span class="bold">Carrot Design</span>
-                            <span class="fs-12 m-l-10">David Nester</span>
+                            <span class="fs-12 m-l-10">Calvin Harris</span>
                           </a>
                           <div class="pull-right">
                             <div class="thumbnail-wrapper d16 circular inline m-t-15 m-r-10 toggle-more-details">
@@ -235,16 +232,15 @@
           <!-- END User Info-->
         </div>
       </div>
-      <div class="header " style="bottom: 0;top: unset;z-index: 999999;padding: 0;">
+      <!-- <div class="header " style="bottom: 0;top: unset;z-index: 999999;padding: 0;">
         <div style="width: 100%;">
           <div>
             <audio id="player" controls>
                 <source src="assets/audios/song.mp3" type="audio/mp3" />
-                <!-- <source src="/path/to/audio.ogg" type="audio/ogg" /> -->
             </audio>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- END HEADER -->
       <!-- START PAGE CONTENT WRAPPER -->
       <div class="page-content-wrapper ">
@@ -253,13 +249,16 @@
           <div class="social-wrapper">
             <div class="social " data-pages="social">
               <!-- START JUMBOTRON -->
-              <div data-pages="parallax">
-                <div class="container-fluid p-l-25 p-r-25 sm-p-l-0 sm-p-r-0">
-                  <div class="inner">
-                    <!-- START BREADCRUMB -->
-                    <ol class="breadcrumb sm-p-b-5">
-                      <li class="breadcrumb-item active"><h4>Likes</h4></li>
-                    </ol>
+              <div class="jumbotron" data-pages="parallax" data-social="cover">
+                <div class="cover-photo" style="background-image: url(&quot;assets/img/social/cover.jpg&quot;); transform: translateY(0px);">
+                  
+                </div>
+                <div class=" container-fluid   container-fixed-lg sm-p-l-0 sm-p-r-0">
+                  <div class="inner" style="transform: translateY(0px); opacity: 1;">
+                    <div class="pull-bottom bottom-left m-b-40 sm-p-l-15">
+                      <h5 class="text-white no-margin">welcome to pages social</h5>
+                      <h1 class="text-white no-margin"><span class="semi-bold">social</span> cover</h1>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -267,177 +266,98 @@
               <div class=" container-fluid   container-fixed-lg sm-p-l-0 sm-p-r-0">
                 <div class="feed">
                   <!-- START DAY -->
-                  <div class="day" data-social="day">
-                    <div class="card social-card share  col3" data-social="item">
-                      <div class="circle" data-toggle="tooltip" title="Label" data-container="body">
-                      </div>
-                      <div class="card-header clearfix">
+                  <div class="day" data-social="day" style="position: relative; width: 940px; height: 1388.73px;">
+                    <!-- START ITEM -->
+                    <div class="card no-border bg-transparent full-width" data-social="item" style="position: absolute; left: 0px; top: 0px;">
+                      <!-- START CONTAINER FLUID -->
+                      <div class="container-fluid p-t-30 p-b-30 ">
                         <div class="row">
-                          <div class="col-md-6">
-                            <div class="user-pic">
-                              <img alt="Profile Image" width="33" height="33" data-src-retina="assets/img/artists/1.jpg" data-src="assets/img/artists/1.jpg" src="assets/img/artists/1.jpg">
-                            </div>
-                            <h5>Calvin Harris</h5>
-                            <h6>Sweet Nothing ft. Florence Welch <span class="location semi-bold"><i class="fa fa-music"></i></span> | Sep 20, 2012
-                            </h6>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="pull-right small">
-                              <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
-                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5,345 <i class="fa fa-comment-o"></i></a>
-                              <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
-                              <a href="javascript:void(0)" class="btn btn-success btn-xs">23k <i class="fa fa-heart text-danger"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card social-card share  col3" data-social="item">
-                      <div class="circle" data-toggle="tooltip" title="Label" data-container="body">
-                      </div>
-                      <div class="card-header clearfix">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="user-pic">
-                              <img alt="Profile Image" width="33" height="33" data-src-retina="assets/img/artists/1.jpg" data-src="assets/img/artists/1.jpg" src="assets/img/artists/1.jpg">
-                            </div>
-                            <h5>Calvin Harris</h5>
-                            <h6>Calvin Harris - We'll Be Coming Back ft. Example <span class="location semi-bold"><i class="fa fa-music"></i></span> | Jul 6, 2012
-                            </h6>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="pull-right small">
-                              <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
-                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5,345 <i class="fa fa-comment-o"></i></a>
-                              <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
-                              <a href="javascript:void(0)" class="btn btn-success btn-xs">23k <i class="fa fa-heart text-danger"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card social-card share  col3" data-social="item">
-                      <div class="circle" data-toggle="tooltip" title="Label" data-container="body">
-                      </div>
-                      <div class="card-header clearfix">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="user-pic">
-                              <img alt="Profile Image" width="33" height="33" data-src-retina="assets/img/artists/2.jpg" data-src="assets/img/artists/2.jpg" src="assets/img/artists/2.jpg">
-                            </div>
-                            <h5>Katy Perry</h5>
-                            <h6>Katy Perry - Dark Horse (Official) ft. Juicy J <span class="location semi-bold"><i class="fa fa-music"></i></span> | Feb 20, 2014
-                            </h6>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="pull-right small">
-                              <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
-                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5,345 <i class="fa fa-comment-o"></i></a>
-                              <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
-                              <a href="javascript:void(0)" class="btn btn-success btn-xs">23k <i class="fa fa-heart text-danger"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card social-card share  col3" data-social="item">
-                      <div class="circle" data-toggle="tooltip" title="Label" data-container="body">
-                      </div>
-                      <div class="card-header clearfix">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="user-pic">
-                              <img alt="Profile Image" width="33" height="33" data-src-retina="assets/img/artists/3.jpg" data-src="assets/img/artists/3.jpg" src="assets/img/artists/3.jpg">
-                            </div>
-                            <h5>Taylor Swift</h5>
-                            <h6>Playlist 2019 <span class="location semi-bold"><i class="fa fa-music"></i></span>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="pull-right small">
-                              <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
-                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5,345 <i class="fa fa-comment-o"></i></a>
-                              <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
-                              <a href="javascript:void(0)" class="btn btn-success btn-xs">23k <i class="fa fa-heart text-danger"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-content">
-                        <div class="row">
-                          <div class="col-lg-12">
-                            <div class="card card-default">
-                              <div class="card-block">
-                                <div class="scrollable">
-                                  <div class="demo-card-scrollable">
-                                    <div class="table-responsive">
-                                      <table class="table table-hover" id="playlist">
-                                        <tbody>
-                                          <tr>
-                                            <td class="v-align-middle semi-bold" style="width: 70%;">We Are Never Ever Getting Back Together</td>
-                                            <td class="v-align-middle" style="width: 30%;">
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5,345 <i class="fa fa-comment-o"></i></a>
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">23k <i class="fa fa-heart-o"></i></a>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td class="v-align-middle semi-bold">You Belong With Me</td>
-                                            <td class="v-align-middle">
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5,345 <i class="fa fa-comment-o"></i></a>
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">23k <i class="fa fa-heart-o"></i></a>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td class="v-align-middle semi-bold">Shake It Off</td>
-                                            <td class="v-align-middle">
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5,345 <i class="fa fa-comment-o"></i></a>
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">23k <i class="fa fa-heart-o"></i></a>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td class="v-align-middle semi-bold">I Knew You Were Trouble</td>
-                                            <td class="v-align-middle">
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5,345 <i class="fa fa-comment-o"></i></a>
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">23k <i class="fa fa-heart-o"></i></a>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td class="v-align-middle semi-bold">Everything Has Changed</td>
-                                            <td class="v-align-middle">
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5,345 <i class="fa fa-comment-o"></i></a>
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">23k <i class="fa fa-heart-o"></i></a>
-                                            </td>
-                                          </tr>
-                                          <tr>
-                                            <td class="v-align-middle semi-bold">All You Had To Do Was Stay</td>
-                                            <td class="v-align-middle">
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5,345 <i class="fa fa-comment-o"></i></a>
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
-                                              <a href="javascript:void(0)" class="btn btn-success btn-xs">23k <i class="fa fa-heart-o"></i></a>
-                                            </td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                    </div>
+                          <div class="col-lg-4">
+                            <div class="container-xs-height">
+                              <div class="row-xs-height">
+                                <div class="social-user-profile col-xs-height text-center col-top">
+                                  <div class="thumbnail-wrapper d48 circular bordered b-white">
+                                    <img alt="Avatar" width="55" height="55" data-src-retina="assets/img/artists/1.jpg" data-src="assets/img/artists/1.jpg" src="assets/img/artists/1.jpg">
                                   </div>
+                                  <br>
+                                  <i class="fa fa-check-circle text-success fs-16 m-t-10"></i>
+                                </div>
+                                <div class="col-xs-height p-l-20">
+                                  <h3 class="no-margin p-b-5">Calvin Harris <a href="javascript:void(0)" class="btn btn-success btn-xs">Follow</a></h3>
+                                  <p class="no-margin fs-16">is excited about the new songs
+                                  </p>
+                                  <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-facebook"></i></a>
+                                  <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-instagram"></i></a>
+                                  <a href="javascript:void(0)" class="btn btn-success btn-xs"><i class="fa fa-twitter"></i></a>
                                 </div>
                               </div>
                             </div>
                           </div>
+                          <div class="col-lg-4">
+                            <p class="no-margin fs-16">Hi My Name is Calvin Harris, &amp; heres my new pages user profile page</p>
+                            <p class="hint-text m-t-5 small">I love reading people's about page especially those who are in the same industry as me.</p>
+                          </div>
+                          <div class="col-lg-4">
+                            <p class="m-b-5 small">1,435 Mutual Friends</p>
+                            <ul class="list-unstyled ">
+                              <li class="m-r-10">
+                                <div class="thumbnail-wrapper d32 circular b-white m-r-5 b-a b-white">
+                                  <img width="35" height="35" data-src-retina="assets/img/profiles/1x.jpg" data-src="assets/img/profiles/1.jpg" alt="Profile Image" src="assets/img/profiles/1.jpg">
+                                </div>
+                              </li>
+                              <li>
+                                <div class="thumbnail-wrapper d32 circular b-white m-r-5 b-a b-white">
+                                  <img width="35" height="35" data-src-retina="assets/img/profiles/2x.jpg" data-src="assets/img/profiles/2.jpg" alt="Profile Image" src="assets/img/profiles/2.jpg">
+                                </div>
+                              </li>
+                              <li>
+                                <div class="thumbnail-wrapper d32 circular b-white m-r-5 b-a b-white">
+                                  <img width="35" height="35" data-src-retina="assets/img/profiles/3x.jpg" data-src="assets/img/profiles/3.jpg" alt="Profile Image" src="assets/img/profiles/3.jpg">
+                                </div>
+                              </li>
+                              <li>
+                                <div class="thumbnail-wrapper d32 circular b-white m-r-5 b-a b-white">
+                                  <img width="35" height="35" data-src-retina="assets/img/profiles/4x.jpg" data-src="assets/img/profiles/4.jpg" alt="Profile Image" src="assets/img/profiles/4.jpg">
+                                </div>
+                              </li>
+                              <li>
+                                <div class="thumbnail-wrapper d32 circular b-white m-r-5 b-a b-white">
+                                  <img width="35" height="35" data-src-retina="assets/img/profiles/5x.jpg" data-src="assets/img/profiles/5.jpg" alt="Profile Image" src="assets/img/profiles/5.jpg">
+                                </div>
+                              </li>
+                              <li>
+                                <div class="thumbnail-wrapper d32 circular b-white m-r-5 b-a b-white">
+                                  <img width="35" height="35" data-src-retina="assets/img/profiles/6x.jpg" data-src="assets/img/profiles/6.jpg" alt="Profile Image" src="assets/img/profiles/6.jpg">
+                                </div>
+                              </li>
+                              <li>
+                                <div class="thumbnail-wrapper d32 circular b-white m-r-5 b-a b-white">
+                                  <img width="35" height="35" data-src-retina="assets/img/profiles/7x.jpg" data-src="assets/img/profiles/7.jpg" alt="Profile Image" src="assets/img/profiles/7.jpg">
+                                </div>
+                              </li>
+                              <li>
+                                <div class="thumbnail-wrapper d32 circular b-white">
+                                  <div class="bg-master text-center text-white"><span>+34</span>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                            <br>
+                            <p class="m-t-5 small">More friends</p>
+                          </div>
                         </div>
                       </div>
+                      <!-- END CONTAINER FLUID -->
                     </div>
-
+                    <!-- END ITEM -->
+                    <!-- START ITEM -->
+                    
+                    <!-- END ITEM -->
+                    <!-- START ITEM -->
+                    
+                    <!-- START ITEM -->
+                    
+                    <!-- END ITEM -->
                   </div>
                   <!-- END DAY -->
                 </div>
@@ -543,7 +463,7 @@
           <!-- BEGIN Overlay Controls !-->
           <input id="overlay-search" class="no-border overlay-search bg-transparent" placeholder="Search..." autocomplete="off" spellcheck="false">
           <br>
-          <input type="hidden" id="destination" value="song-results">
+          <input type="hidden" id="destination" value="friend-results">
           <!-- END Overlay Controls !-->
         </div>
         <!-- BEGIN Overlay Search Results, This part is for demo purpose, you can add anything you like !-->
@@ -579,12 +499,6 @@
     <script src="assets/plugins/jquery-isotope/isotope.pkgd.min.js" type="text/javascript"></script>
     <script src="assets/plugins/classie/classie.js" type="text/javascript"></script>
     <script src="assets/plugins/codrops-stepsform/js/stepsForm.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-datatable/media/js/jquery.dataTables.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-datatable/extensions/TableTools/js/dataTables.tableTools.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-datatable/media/js/dataTables.bootstrap.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-datatable/extensions/Bootstrap/jquery-datatable-bootstrap.js" type="text/javascript"></script>
-    <script type="text/javascript" src="assets/plugins/datatables-responsive/js/datatables.responsive.js"></script>
-    <script type="text/javascript" src="assets/plugins/datatables-responsive/js/lodash.min.js"></script>
     <script src="https://cdn.plyr.io/3.5.8/plyr.js"></script>
     <!-- END VENDOR JS -->
     <!-- BEGIN CORE TEMPLATE JS -->
