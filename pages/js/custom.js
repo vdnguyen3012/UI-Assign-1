@@ -21,6 +21,11 @@
 //   // $("#playlists").preappend(html);
 // })
 
+$('#btnSearch').on('click', function(){
+  var page = $("input[name='destination']:checked"). val();
+  window.location.href = page + '.html'
+})
+
 // Setup the player
 const player = new Plyr('#player', { controls: [
   'play-large', // The large play button in the center

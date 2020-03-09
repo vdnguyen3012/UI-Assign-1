@@ -17,7 +17,8 @@
              // Callback that will be run when you hit ENTER button on search box
             onSearchSubmit: function(searchString) {
                 console.log("Search for: " + searchString);
-                var page = $("#destination").val();
+                // var page = $(".destination").val();
+                var page = $("input[name='destination']:checked"). val();
                 window.location.href = page + '.html?q=' + searchString
             },
             // Callback that will be run whenever you enter a key into search box. 

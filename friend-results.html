@@ -34,7 +34,7 @@
       <!-- END SIDEBAR MENU TOP TRAY CONTENT-->
       <!-- BEGIN SIDEBAR MENU HEADER-->
       <div class="sidebar-header">
-        <a href="artists.html"><img src="assets/img/logo.png" alt="logo" class="brand" data-src="assets/img/logo.png" data-src-retina="assets/img/logo.png" width="70" height="70"></a>
+        <img src="assets/img/logo.png" alt="logo" class="brand" data-src="assets/img/logo.png" data-src-retina="assets/img/logo.png" width="70" height="70">
       </div>
       <!-- END SIDEBAR MENU HEADER-->
       <!-- START SIDEBAR MENU -->
@@ -177,7 +177,7 @@
           <div class="pull-left p-r-10 fs-14 font-heading hidden-md-down m-l-20">
             <span class="semi-bold">David</span> <span class="text-master">Nest</span>
           </div>
-          <div class="dropdown pull-right hidden-md-down">
+          <div class="dropdown pull-right">
             <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span class="thumbnail-wrapper d32 circular inline">
               <img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
@@ -407,17 +407,30 @@
           <!-- BEGIN Overlay Controls !-->
           <input id="overlay-search" class="no-border overlay-search bg-transparent" placeholder="Search..." autocomplete="off" spellcheck="false">
           <br>
-          <input type="hidden" id="destination" value="friend-results">
+          <div class="inline-block">
+            <div class="radio right radio-success">
+              <input id="artists" type="radio" name="destination" value="artist-results" checked="checked">
+              <label for="artists">Artists</label>
+            </div>
+          </div>
+          <div class="inline-block">
+            <div class="radio right radio-success">
+              <input id="songs" type="radio" name="destination" value="song-results">
+              <label for="songs">Songs</label>
+            </div>
+          </div>
+          <div class="inline-block">
+            <div class="radio right radio-success">
+              <input id="friends" type="radio" name="destination" value="friend-results">
+              <label for="friends">Friends</label>
+            </div>
+          </div>
+          <br/>
+          <button type="button" id="btnSearch" class="btn btn-primary">Search</button>
           <!-- END Overlay Controls !-->
         </div>
         <!-- BEGIN Overlay Search Results, This part is for demo purpose, you can add anything you like !-->
-        <div class="container-fluid">
-          <span id="overlay-suggestions"></span>
-          <div class="search-results">
-            <p class="bold">Search History</p>
-            
-          </div>
-        </div>
+        
         <!-- END Overlay Search Results !-->
       </div>
       <!-- END Overlay Content !-->
@@ -451,79 +464,8 @@
     <!-- END CORE TEMPLATE JS -->
     <!-- BEGIN PAGE LEVEL JS -->
     <script src="assets/js/scripts.js" type="text/javascript"></script>
-    <script src="assets/js/scripts.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL JS -->
-    <script>
-      const controls = `
-      <div class="plyr__controls">
-          <button type="button" class="plyr__control" data-plyr="restart">
-              <svg role="presentation"><use xlink:href="#plyr-restart"></use></svg>
-              <span class="plyr__tooltip" role="tooltip">Restart</span>
-          </button>
-          <button type="button" class="plyr__control" data-plyr="rewind">
-              <svg role="presentation"><use xlink:href="#plyr-rewind"></use></svg>
-              <span class="plyr__tooltip" role="tooltip">Rewind {seektime} secs</span>
-          </button>
-          <button type="button" class="plyr__control" aria-label="Play, {title}" data-plyr="play">
-              <svg class="icon--pressed" role="presentation"><use xlink:href="#plyr-pause"></use></svg>
-              <svg class="icon--not-pressed" role="presentation"><use xlink:href="#plyr-play"></use></svg>
-              <span class="label--pressed plyr__tooltip" role="tooltip">Pause</span>
-              <span class="label--not-pressed plyr__tooltip" role="tooltip">Play</span>
-          </button>
-          <button type="button" class="plyr__control" data-plyr="fast-forward">
-              <svg role="presentation"><use xlink:href="#plyr-fast-forward"></use></svg>
-              <span class="plyr__tooltip" role="tooltip">Forward {seektime} secs</span>
-          </button>
-          <div class="plyr__progress">
-              <input data-plyr="seek" type="range" min="0" max="100" step="0.01" value="0" aria-label="Seek">
-              <progress class="plyr__progress__buffer" min="0" max="100" value="0">% buffered</progress>
-              <span role="tooltip" class="plyr__tooltip">00:00</span>
-          </div>
-          <div class="plyr__time plyr__time--current" aria-label="Current time">00:00</div>
-          <div class="plyr__time plyr__time--duration" aria-label="Duration">00:00</div>
-          <button type="button" class="plyr__control" aria-label="Mute" data-plyr="mute">
-              <svg class="icon--pressed" role="presentation"><use xlink:href="#plyr-muted"></use></svg>
-              <svg class="icon--not-pressed" role="presentation"><use xlink:href="#plyr-volume"></use></svg>
-              <span class="label--pressed plyr__tooltip" role="tooltip">Unmute</span>
-              <span class="label--not-pressed plyr__tooltip" role="tooltip">Mute</span>
-          </button>
-          <div class="plyr__volume">
-              <input data-plyr="volume" type="range" min="0" max="1" step="0.05" value="1" autocomplete="off" aria-label="Volume">
-          </div>
-          <button type="button" class="plyr__control" data-plyr="captions">
-              <svg class="icon--pressed" role="presentation"><use xlink:href="#plyr-captions-on"></use></svg>
-              <svg class="icon--not-pressed" role="presentation"><use xlink:href="#plyr-captions-off"></use></svg>
-              <span class="label--pressed plyr__tooltip" role="tooltip">Disable captions</span>
-              <span class="label--not-pressed plyr__tooltip" role="tooltip">Enable captions</span>
-          </button>
-          <button type="button" class="plyr__control" data-plyr="fullscreen">
-              <svg class="icon--pressed" role="presentation"><use xlink:href="#plyr-exit-fullscreen"></use></svg>
-              <svg class="icon--not-pressed" role="presentation"><use xlink:href="#plyr-enter-fullscreen"></use></svg>
-              <span class="label--pressed plyr__tooltip" role="tooltip">Exit fullscreen</span>
-              <span class="label--not-pressed plyr__tooltip" role="tooltip">Enter fullscreen</span>
-          </button>
-      </div>
-      `;
-
-      // Setup the player
-      const player = new Plyr('#player', { controls: [
-          'play-large', // The large play button in the center
-          'restart', // Restart playback
-          'rewind', // Rewind by the seek time (default 10 seconds)
-          'play', // Play/pause playback
-          'fast-forward', // Fast forward by the seek time (default 10 seconds)
-          'progress', // The progress bar and scrubber for playback and buffering
-          'current-time', // The current time of playback
-          // 'duration', // The full duration of the media
-          'mute', // Toggle mute
-          'volume', // Volume control
-          'captions', // Toggle captions
-          'settings', // Settings menu
-          'pip', // Picture-in-picture (currently Safari only)
-          'airplay', // Airplay (currently Safari only)
-          'download', // Show a download button with a link to either the current source or a custom URL you specify in your options
-          'fullscreen', // Toggle fullscreen
-      ] });
-  </script>
+    <script src="pages/js/custom.js"></script>
+    
   </body>
 </html>

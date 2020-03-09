@@ -37,7 +37,7 @@
       <!-- END SIDEBAR MENU TOP TRAY CONTENT-->
       <!-- BEGIN SIDEBAR MENU HEADER-->
       <div class="sidebar-header">
-        <a href="artists.html"><img src="assets/img/logo.png" alt="logo" class="brand" data-src="assets/img/logo.png" data-src-retina="assets/img/logo.png" width="70" height="70"></a>
+        <img src="assets/img/logo.png" alt="logo" class="brand" data-src="assets/img/logo.png" data-src-retina="assets/img/logo.png" width="70" height="70">
       </div>
       <!-- END SIDEBAR MENU HEADER-->
       <!-- START SIDEBAR MENU -->
@@ -180,7 +180,7 @@
           <div class="pull-left p-r-10 fs-14 font-heading hidden-md-down m-l-20">
             <span class="semi-bold">David</span> <span class="text-master">Nest</span>
           </div>
-          <div class="dropdown pull-right hidden-md-down">
+          <div class="dropdown pull-right">
             <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span class="thumbnail-wrapper d32 circular inline">
               <img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
@@ -249,7 +249,7 @@
                             <div class="pull-right small">
                               <a href="javascript:void(0)" class="btn btn-success btn-xs add-to-play-list" data-toggle="modal" data-target="#addPlaylistModal">Add to Playlist</a>
                               <a href="javascript:void(0)" class="btn btn-success btn-xs btn-play" class="btn-play" data-is-played="0" data-song="song1"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
-                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5k <i class="fa fa-comment-o"></i></a>
+                              <a href="javascript:void(0)" class="btn btn-success btn-xs">10k <i class="fa fa-comment-o"></i></a>
                               <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
                               <a href="javascript:void(0)" class="btn btn-success btn-xs btn-like">23k <i class="fa fa-heart-o text-danger"></i></a>
                             </div>
@@ -274,7 +274,7 @@
                             <div class="pull-right small">
                               <a href="javascript:void(0)" class="btn btn-success btn-xs add-to-play-list" data-toggle="modal" data-target="#addPlaylistModal">Add to Playlist</a>
                               <a href="javascript:void(0)" class="btn btn-success btn-xs btn-play" class="btn-play" data-is-played="0" data-song="song2"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
-                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5k <i class="fa fa-comment-o"></i></a>
+                              <a href="javascript:void(0)" class="btn btn-success btn-xs">10k <i class="fa fa-comment-o"></i></a>
                               <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
                               <a href="javascript:void(0)" class="btn btn-success btn-xs btn-like">23k <i class="fa fa-heart-o text-danger"></i></a>
                             </div>
@@ -299,7 +299,7 @@
                             <div class="pull-right small">
                               <a href="javascript:void(0)" class="btn btn-success btn-xs add-to-play-list" data-toggle="modal" data-target="#addPlaylistModal">Add to Playlist</a>
                               <a href="javascript:void(0)" class="btn btn-success btn-xs btn-play" class="btn-play" data-is-played="0" data-song="song3"><i class="fa fa-play-circle" style="font-size: small;"></i></a>
-                              <a href="javascript:void(0)" class="btn btn-success btn-xs">5k <i class="fa fa-comment-o"></i></a>
+                              <a href="javascript:void(0)" class="btn btn-success btn-xs">10k <i class="fa fa-comment-o"></i></a>
                               <a href="javascript:void(0)" class="btn btn-success btn-xs"  data-toggle="modal" data-target="#shoutModal">23k <i class="fa fa-share-square-o"></i></a>
                               <a href="javascript:void(0)" class="btn btn-success btn-xs btn-like">23k <i class="fa fa-heart-o text-danger"></i></a>
                             </div>
@@ -454,17 +454,30 @@
           <!-- BEGIN Overlay Controls !-->
           <input id="overlay-search" class="no-border overlay-search bg-transparent" placeholder="Search..." autocomplete="off" spellcheck="false">
           <br>
-          <input type="hidden" id="destination" value="song-results">
+          <div class="inline-block">
+            <div class="radio right radio-success">
+              <input id="artists" type="radio" name="destination" value="artist-results" checked="checked">
+              <label for="artists">Artists</label>
+            </div>
+          </div>
+          <div class="inline-block">
+            <div class="radio right radio-success">
+              <input id="songs" type="radio" name="destination" value="song-results">
+              <label for="songs">Songs</label>
+            </div>
+          </div>
+          <div class="inline-block">
+            <div class="radio right radio-success">
+              <input id="friends" type="radio" name="destination" value="friend-results">
+              <label for="friends">Friends</label>
+            </div>
+          </div>
+          <br/>
+          <button type="button" id="btnSearch" class="btn btn-primary">Search</button>
           <!-- END Overlay Controls !-->
         </div>
         <!-- BEGIN Overlay Search Results, This part is for demo purpose, you can add anything you like !-->
-        <div class="container-fluid">
-          <span id="overlay-suggestions"></span>
-          <div class="search-results">
-            <p class="bold">Search History</p>
-            
-          </div>
-        </div>
+        
         <!-- END Overlay Search Results !-->
       </div>
       <!-- END Overlay Content !-->
