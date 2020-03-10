@@ -26,6 +26,17 @@ $('#btnSearch').on('click', function(){
   window.location.href = page + '.html'
 })
 
+$('.display-notification').on('click', function(){
+  var message = $(this).data('message')
+  $('body').pgNotification({
+      style: 'flip',
+      message: message,
+      position: 'top-right',
+      timeout: 3500,
+      // type: 'success'
+  }).show();
+})
+
 // Setup the player
 const player = new Plyr('#player', { controls: [
   'play-large', // The large play button in the center
