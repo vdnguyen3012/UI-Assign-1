@@ -253,7 +253,7 @@
                                   <a href="https://www.facebook.com/calvinharris/" target="_blank" class="btn btn-success btn-xs"><i class="fa fa-facebook"></i></a>
                                   <a href="https://www.instagram.com/calvinharris/" target="_blank" class="btn btn-success btn-xs"><i class="fa fa-instagram"></i></a>
                                   <a href="https://twitter.com/calvinharris/" target="_blank" class="btn btn-success btn-xs"><i class="fa fa-twitter"></i></a>
-                                  <a href="javascript:void(0)" class="btn btn-success btn-xs btn-follow">Following</a>
+                                  <a href="javascript:void(0)" class="btn alert-info btn-xs btn-follow">Following</a>
                                 </div>
                               </div>
                             </div>
@@ -489,11 +489,14 @@
     <script src="pages/js/custom.js"></script>
     <script type="text/javascript">
       $('.btn-follow').on('click', function(){
-        console.log($(this).text())
-        if($(this).text() == 'Follow')
+        if($(this).text() == 'Follow') {
           $(this).text('Following');
-        else
+          $(this).removeClass('btn-success').addClass('alert-info')
+        }
+        else {
           $(this).text('Follow');
+          $(this).removeClass('alert-info').addClass('btn-success')
+        }
       })
     </script>
   </body>
