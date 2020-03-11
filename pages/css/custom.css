@@ -39,3 +39,15 @@ table#playlist tr td {
 .select2-dropdown{
     z-index: 3051;
 }
+
+body .header .search-link {
+  display: inline-block;
+}
+
+@media (max-width: 767px) {
+  .header .search-link {
+      height: 16px;
+      width: 16px;
+      overflow: hidden;
+  }
+}

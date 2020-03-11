@@ -105,3 +105,10 @@ $('.btn-like').on('click', function(){
     $(this).find('i').removeClass('fa-heart').addClass('fa-heart-o');
   }
 })
+
+$('.add-friend').on('click', function(){
+  if($(this).text() == 'Add Friend')
+    $(this).text('Waiting');
+  else
+    $(this).text('Add Friend');
+})
